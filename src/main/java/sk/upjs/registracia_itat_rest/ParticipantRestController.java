@@ -2,6 +2,7 @@ package sk.upjs.registracia_itat_rest;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import sk.upjs.registracia_itat.persitent.DaoFactory;
 import sk.upjs.registracia_itat.persitent.ParticipantDao;
 import sk.upjs.registracia_itat.persitent.ParticipantNotFoundException;
 
+@CrossOrigin
 @RestController
 public class ParticipantRestController {
 
